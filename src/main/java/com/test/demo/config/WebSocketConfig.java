@@ -22,6 +22,8 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
         // registry.addEndpoint("/socket").setAllowedOrigins("http://localhost:3000");
 
         // Si se quiere levantar con angular
-        registry.addEndpoint("/socket").setAllowedOrigins("http://localhost:4200").withSockJS();
+        // registry.addEndpoint("/socket").setAllowedOrigins("http://localhost:4200").withSockJS();
+
+        registry.addEndpoint("/socket").setAllowedOrigins("ws://localhost:50469");
     }
 }
